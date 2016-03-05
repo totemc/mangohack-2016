@@ -1,0 +1,33 @@
+body {
+	background-color: #FFEBEE;
+}
+
+section.header{
+	height: 100px;
+	background-color: #F44336;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+}
+
+#main-nav{
+	background-color: #F44336;
+	color: white;
+}
+
+#main-nav li a{
+	background-color: #F44336;
+	color: white;
+}
+
+.content {
+	padding: 2em;
+}
+
+.image-thumbnail-large{
+	background-image: url('../img/burger.jpg');
+	background-position: center;
+	background-size: cover;
+	min-height: 250px;
+	max-height: 100%;
+
+}
