@@ -4,7 +4,7 @@ html, body {
 
 body {
 	background-color: #FFEBEE;
-	
+
 }
 
 section.header {
@@ -38,6 +38,15 @@ section.content {
 
 }
 
+.image-thumbnail-type {
+	background-image: url('http://www.tacobueno.com/media/1375/softbeeftacolarge.png?quality=65');
+	background-position: center;
+	background-size: cover;
+	height: 325px;
+	width: 325px;
+
+}
+
 .image-thumbnail-logo {
 	background-image: url('../img/logo.png');
 	background-position: center;
@@ -51,6 +60,19 @@ section.content {
 	max-width: 100%;
 
 
+}
+
+.image-thumbnail-logo + div {
+		position:fixed;
+	z-index: 10;
+	display: block;
+	top: 0px;
+	height: 50px;
+	width: 50px;
+	max-width: 100%;
+	color:white;
+	margin-left: 3.5em;
+	margin-top: .75em;
 }
 
 .top-bartest {
@@ -185,4 +207,24 @@ display: inline-block;
 
 .shop-content-wrapper{
 	padding-top:1.5em;
+}
+
+.types-wrapper{
+	padding-top: 1em;
+}
+
+.login-button{
+	z-index: 11;
+	display:inline-block;
+	top: 0px;
+	position: fixed;
+	clear:both;
+	float: right;
+	right: 0px;
+	height: auto;
+}
+
+.login-button{
+	text-align: center;
+	background-color:#B71C1C;
 }
