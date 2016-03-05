@@ -4,6 +4,7 @@ html, body {
 
 body {
 	background-color: #FFEBEE;
+	
 }
 
 section.header {
@@ -15,8 +16,8 @@ section.header {
 }
 
 
-.content {
-	padding: 2em;
+section.content {
+	padding: 3em;
 }
 
 .image-thumbnail-large {
@@ -34,6 +35,21 @@ section.header {
 	background-size: cover;
 	min-height: 250px;
 	max-height: 100%;
+
+}
+
+.image-thumbnail-logo {
+	background-image: url('../img/logo.png');
+	background-position: center;
+	background-size: cover;
+	position:fixed;
+	z-index: 10;
+	display: block;
+	top: 0px;
+	height: 50px;
+	width: 50px;
+	max-width: 100%;
+
 
 }
 
@@ -152,4 +168,21 @@ display: inline-block;
 
 .burger-two-content-wrapper{
 	text-align: center;
+	padding-top: 3em;
+}
+
+.bin-button{
+	margin-top: 2em;
+	text-align: center;
+	background-color:#B71C1C;
+
+}
+.bin-button:hover{
+	text-align: center;
+	background-color:#FF1744;
+	
+}
+
+.shop-content-wrapper{
+	padding-top:1.5em;
 }
