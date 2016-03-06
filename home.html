@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
   <head>
     <link rel="icon" href="img/favicon.ico"/>
-
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
 
@@ -10,14 +10,14 @@
     <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <title>MangoHack16</title>
+    <title>MangoHack16 - home</title>
   </head>
 <body>
 <div class="image-thumbnail-logo"></div>
 <div>walkr</div>
-<div class="login-button">
+<!-- <div class="login-button">
        <a href="login.html" class="button large login-button">login</a>
-</div>
+</div> -->
   <div class="row nav-wrapper-full">
     <div class="small-4 columns small-centered text-center">
       <div class="top-bar bar-background random-thing">
@@ -26,12 +26,7 @@
               <a href="home.html">Home</a>
             </li>
             <li>
-              <a href="shop-land.html">Shop</a>
-              <ul class="menu vertical">
-                <li><a href="shop1.html">model 1</a></li>
-                <li><a href="shop2.html">model 2</a></li>
-                <li><a href="shop3.html">model 3</a></li>
-              </ul>
+              <a href="shop-land2.html">Shop</a>
             </li>
             <li><a href="about.html">About</a></li>
           </ul>
@@ -41,11 +36,8 @@
 <div id="fullpage">
     <div class="section active burger-one">
       <div class="row">
-        <div class="small-6 columns burger-one-content-wrapper">
-          <h1>High efficiency, low cost prosthetics.</h1>
-        </div>
-        <div class="small-6 columns">
-          <div class="image-thumbnail-cat"></div>
+        <div class="small-12 columns burger-one-content-wrapper trans-bg">
+          <h1>420</h1>
         </div>
       </div>
     </div>
@@ -56,31 +48,44 @@
         </div>
       </div>
       <div class="row burger-two-content-wrapper">
-        <div class="small-6 columns">
-        <h1>I'm not too sure what to write here. So here's some filler text.</h1>
-        </div>
-        <div class="small-6 columns">
-          <h1>Same thing as the other paragraph.</h1>
+
+        <div class="small-12 columns cost-wrapper">
+          <h3>
+            <ul>
+              <li>Lithium Battery - 15$,</li>
+              <li>Sensors - 6$</li>
+              <li>Arduino - 5$</li>
+              <li>Shield - 6$</li>
+              <li>Gyro/accelerometer - 6$</li>
+              <li>Cables - 10$</li>
+              <li>Servo - 80-100$</li>
+              <div class="row">
+                <div class="small-6 columns small-centered">
+              <hr class="thick-hr">
+              <li>Total - 140$~</li>
+                </div>
+              </div>
+            </ul>
+          </h1>
         </div>
       </div>
     </div>
     <div class="section burger-three">
-      <div class="row">
+      <div class="row trans-bg">
         <div class="small-12 columns">
-          <h1>You're probably wondering how the hell we're able to do this.</h1>
+          <h1>Using technology to assist everyone live their lives like they were intended to.</h1>
         </div>
       </div>
       <div class="row">
-        <div class="large-12 large-centered text-center columns">
-          <h2 style="text-align:center;">You're asking the wrong person. I have no clue.</h2>
-          <a href="shop-land.html" class="button large bin-button">buy it anyways.</a>
+        <div class="large-12 large-centered text-center columns trans-bg2">
+          <a href="shop-land2.html" class="button large bin-button">get started here</a>
         </div>
       </div>
     </div>
 </div>
 <footer>
   <div class="footer-wrapper-full">
-      ©JA & AR. You can follow us on social media too, if you want.
+      Created by JA & AR. Made with love for MangoHacks 2016.
   </div>
 </footer>
   <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
@@ -88,7 +93,6 @@
   <script type="text/javascript" src="js/foundation.js"></script>
   <script type="text/javascript" src="js/foundation-doc.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/passport.js"></script>
 
 </body>
 

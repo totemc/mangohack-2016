@@ -1,71 +1,57 @@
-  <!DOCTYPE html>
-  <html ng-app="myApp">
-    <head>
-      <link rel="icon" href="img/favicon.ico"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="img/favicon.ico"/>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
 
-      <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-      <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-      <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-      <title>MangoHack16</title>
-    </head>
-  <section class="header">
-    <img src="img/burger-logo.png">
-  </section>
-  <div class="row nav-wrapper">
-    <div class="small-2 columns small-centered">
-      <div class="top-bar bar-background">
+    <title>MangoHack16 - home</title>
+  </head>
+<body>
+<div class="image-thumbnail-logo"></div>
+<div>walkr</div>
+<!-- navbar -->
+  <div class="row nav-wrapper-full">
+    <div class="small-4 columns small-centered text-center">
+      <div class="top-bar bar-background random-thing">
           <ul class="dropdown menu" data-dropdown-menu>
-            <li>
+            <li class="nav-button nav-button2">
               <a href="home.html">Home</a>
             </li>
             <li>
-              <a href="#">Shop?</a>
-              <ul class="menu vertical">
-                <li><a href="#">test 1</a></li>
-                <li><a href="#">test 2</a></li>
-                <li><a href="#">test 3</a></li>
-              </ul>
+              <a href="shop-land2.html">Shop</a>
             </li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
       </div>
     </div>
   </div>
-
-  <!-- content section -->
-  <section class="content">
-    <div class="row">
-      <!-- title -->
-      <div class="small-12 columns" ng-controller="appController">
-        <h1>{{title}}</h1>
+  <!-- end navbar -->
+<div id="fullpage">
+    <div class="section active about-content">
+      <div class="row">
+        <div class="small-12 columns burger-one-content-wrapper trans-bg">
+          <h3>In a perfect world, medicine and medical aid would come cheap to those who need it.</h3>
+          <h4>Unfortunately this isn't the case. We've thought and worked hard to find a solution for one of the many problems that this scenario poses.</h4>
+        </div>
       </div>
     </div>
-      <!-- thumbnail -->
-    <div class="row">
-      <div class="small-12 large-6 columns">
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada velit dolor, eu euismod risus auctor eu. Integer mollis dictum arcu, quis lobortis velit pellentesque eget.</li> <br>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada velit dolor, eu euismod risus auctor eu. Integer mollis dictum arcu, quis lobortis velit pellentesque eget.</li> <br>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada velit dolor, eu euismod risus auctor eu. Integer mollis dictum arcu, quis lobortis velit pellentesque eget.</li> <br>
-        </ul>
-      </div>
-      <div class="small-12 large-6 columns">
-        <div class="image-thumbnail-large"></div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer-wrapper">
-      ©JA & AR. You can follow us on social media too, if you want.
-    </div>
-  </footer>
-    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  </div>
+</body>
+<footer>
+  <div class="footer-wrapper-full">
+      Created by JA & AR. Made with love for MangoHacks 2016.
+  </div>
+</footer>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script>
   <script type="text/javascript" src="js/foundation.js"></script>
-  <script type="text/javascript" src="js/foundation-doc.js"></script>
+  <script type="text/javascript" src="js/foundation-doc2.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 
 </body>
