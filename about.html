@@ -10,13 +10,42 @@
     <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <title>MangoHack16 - home</title>
+    <title>MangoHack16 - about</title>
   </head>
 <body>
 <div class="image-thumbnail-logo"></div>
 <div>walkr</div>
 <!-- navbar -->
-  <div class="row nav-wrapper-full">
+<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    <!-- off-canvas title bar for 'small' screen -->
+    <div class="title-bar chicken-nugget" data-responsive-toggle="widemenu" data-hide-for="medium">
+      <div class="title-bar-left">
+        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+        <span class="title-bar-title"></span>
+      </div>
+      <div class="title-bar-right">
+        <span class="title-bar-title">Menu</span>
+        <button class="menu-icon black" type="button" data-open="offCanvasRight"></button>
+      </div>
+    </div>
+
+    
+
+    <!-- off-canvas right menu -->
+    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+      <ul class="vertical dropdown menu" data-dropdown-menu>
+        <li class="black"><a class="black" href="home.html">Home</a></li>
+        <li class="black"><a class="black" href="about.html">About</a></li>
+        <li class="black"><a class="black" href="shop-land2.html">Shop</a></li>
+      </ul>
+    </div>
+
+    <!-- "wider" top-bar menu for 'medium' and up -->
+    <div id="widemenu" class="top-bar">
+      <div class="top-bar-left">
+        <div class="row nav-wrapper-full">
     <div class="small-4 columns small-centered text-center">
       <div class="top-bar bar-background random-thing">
           <ul class="dropdown menu" data-dropdown-menu>
@@ -31,27 +60,103 @@
       </div>
     </div>
   </div>
-  <!-- end navbar -->
-<div id="fullpage">
-    <div class="section active about-content">
-      <div class="row">
-        <div class="small-12 columns burger-one-content-wrapper trans-bg">
-          <h3>In a perfect world, medicine and medical aid would come cheap to those who need it.</h3>
-          <h4>Unfortunately this isn't the case. We've thought and worked hard to find a solution for one of the many problems that this scenario poses.</h4>
-        </div>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- original content goes in this container -->
+        <div id="fullpage">
+            <div class="section active about-content">
+              <div class="row">
+                <div class="small-12 columns burger-one-content-wrapper trans-bg text-div-thing">
+                  <h3>In a perfect world, medicine and medical aid would come cheap to those who need it.</h3>
+                  <h4>Unfortunately this isn't the case. We've thought and worked hard to find a solution for one of the many problems that this scenario poses.</h4>
+                  <h4>Using an arduino uno, we control a linear actuator and detect obstacles and position to help the wearer of the prosthetic live an enhanced life.</h4>
+                </div>
+              </div>
+            </div>
+            <div class="section jaime-sec">
+              <div class="row">
+                <div class="small-6 columns">
+                  <div class="image-thumbnail-jaime"></div>
+                </div>
+                <div class="small-6 columns text-center">
+                <h1>Jaime Acevedo</h1>
+                  <div class="row">
+                    <div class="small-12 columns">
+                      <h5>Junior at FIU studying Computer Engineering.</h5>
+                      <h5>The project wouldn't be completed or possible if not for him, spent the majority of the hackathon soldering and cursing out the relays that kept failing on him.</h5>
+                      <h5>Spends most of his time toying around with drones, arduinos, and circuits.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section adrian-sec">
+              <div class="row">
+                <div class="small-6 columns text-center">
+                  <h1>Adrian Rodriguez</h1>
+                  <div class="row">
+                    <div class="small-12 columns">
+                      <h5>Junior at MDC studying Computer Science</h5>
+                      <h5>Snacking away on Nutter Butters while typing away on his keyboard, the site was mainly developed by him.</h5>
+                      <h5>When not coding, he spends way too much time playing Pokemon and procrastinating.</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-6 columns">
+                  <div class="image-thumbnail-adrian"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
+        <footer>
+          <div class="footer-wrapper-full">
+              Created by JA & AR. Made with love for MangoHacks 2016.
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  <!-- close wrapper, no more content after this -->
+  </div>
+</div>
+          
       </div>
     </div>
   </div>
-</body>
-<footer>
-  <div class="footer-wrapper-full">
-      Created by JA & AR. Made with love for MangoHacks 2016.
-  </div>
-</footer>
+
+<!-- 
+  <div class="row nav-wrapper-full">
+    <div class="small-4 columns small-centered">
+      <div class="top-bar bar-background random-thing">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="nav-button nav-button2 hide-for-small-only">
+              <a href="home.html">Home</a>
+            </li>
+            <li class="hide-for-small-only">
+              <a href="shop-land2.html">Shop</a>
+            </li>
+            <li class="hide-for-small-only"><a href="about.html">About</a></li>
+            
+          </ul>
+      </div>
+    </div>
+    <div class="large-2 small-6 columns">
+      Eat this
+    </div>
+  </div> -->
+  <!-- end navbar -->
+
   <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script>
   <script type="text/javascript" src="js/foundation.js"></script>
-  <script type="text/javascript" src="js/foundation-doc2.js"></script>
+  <script type="text/javascript" src="js/foundation-doc.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 
 </body>
